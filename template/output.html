@@ -1,0 +1,45 @@
+<html>
+<head>
+</head>
+ <style>
+body {
+background-image: linear-gradient(to left bottom, #bc8e1f, #bf9f30, #c1b042, #c3c155, #c5d169, #b1e08a, #a1edad, #98f7d0, #9ffafb, #c6faff, #edfaff, #ffffff);
+}
+.div1 {
+ width: 300px;
+ height: 100px;
+ border: 1px solid red;
+ box-sizing: border-box;
+}
+.boxed{
+border: 1px solid black;
+}
+td, th {
+ border: 1px solid #dddddd;
+ text-align: left;
+ padding: 8px;
+}
+</style>
+    <body>
+		<center>
+		<h1> Grades</h2>
+		<table>
+		<tr>
+			<th> ID  </th>
+			<th> Name </th>
+			<th> nonfuzzy_grades </th>
+			<th>fuzzy_grades</th>
+		
+		</tr>
+			{% for item in data %}
+			
+			<tr>
+				<td headin>{{item[0]}}</td>
+				<td>{{item[1]}}</td>
+				<td>{{item[2]}}</td>
+				<td>{{item[3]}}</td>
+			</tr>
+			{% endfor %}
+		</table></center>
+    </body>
+</html>

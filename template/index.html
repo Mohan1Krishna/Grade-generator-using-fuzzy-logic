@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<title>Grade Generator</title><br><br>
+<center><h1> *** WELCOME***</h1></center>
+<center><h2> Automatic Grade Generator Using Fuzzy Logic </h2>
+</center><br><br>
+<center><div class="boxed" >
+ <p>WE are here to help ease the process of grading.
+evaluating papers is itself a hard task, so is generarting grades from those marks
+This platform adds a human factor to the grading process, taking into account
+things like attendence, importance of an evaluation component and its complexity with the 
+help of Fuzzy Logic</p>
+
+<p>You only need to follow theese four steps:<br><br>
+	1.) name the xlsx file that you have marks in as "marks.xlsx"<br>
+	2.) the sheet should have the following columns: (ID, Name, Attendence, Quiz, Lab, Mids, Compre)<br>
+	3.) in the following page, please enter the maximum marks for each component chosen.<br>
+	4.) if the course you have doesnot have any of the above components, put maximum marks as zero, and all the 
+		values under that column in "marks.xlsx"<br>
+	5.) sit back and get the grades</p>
+</div></center>
+<center> <h3>Select a file to upload</h3> </center>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+href="https://www.w3schools.com/w3css/4/w3.css">
+ <style>
+body {
+ background-image: url("https://i.imgur.com/TvAExGI.jpg");
+	background-size: cover;
+}
+.div1 {
+ width: 750px;
+ height: 100px;
+ border: 1px solid red;
+ box-sizing: border-box;
+}
+.boxed{
+width: 750px;
+border: 1px solid black;
+}
+</style>
+<center><form method="post" action="/" enctype="multipart/form-data">
+ <dl>
+<p>
+<input type="file" name="file"
+autocomplete="off" required>
+</p>
+ </dl>
+ <p>
+<input type="submit" value="Submit">
+</p>
+</form>
+</center>
+<script>
+{% with messages = get_flashed_messages() %}
+ {% if messages %}
+<ul class=flashes>
+{% for message in messages %}
+ <li>{{ message }}</li>
+{% endfor %}
+</ul>
+ {% endif %}
+{% endwith %}
+</script>
+</body>
+</html>
