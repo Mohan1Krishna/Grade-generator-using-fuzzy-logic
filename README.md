@@ -1,1 +1,5 @@
 # Grade-generator-using-fuzzy-logic
+
+
+Every student is unique. Grading of student scores should be done in a more fair and transparent manner. Whenever a computer is used to create Histograms and then grades, there is no consideration that comes when the Instructor awards grades. Fuzziness arises by virtue of consideration of all the evaluation components and the overall performance so that there is less chance that the grade is crippled by one bad performance. We use fuzzy logic to solve the said problem of Grading Student. 
+The proposed method is to grade students using various components of evaluation, their complexity, and importance which are taken from a group of professors for that subject and component in consideration. This method can be used at the end of a semester when all the evaluation components are completed and we have scores for each student in each of them. The method makes use of the Fuzzy inference system (FIS) and fuzzy logic and Mandani’s min-max rule during inference. The two-node fuzzy implementation helps in scaling the grades to a near-human level.
